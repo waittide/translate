@@ -1,0 +1,16 @@
+[package]
+name = "translate"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+axum.workspace = true
+config = { path = "../config" }
+service = { path = "../service" }
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+web = { path = "../web" }
+
+[lints]
+workspace = true

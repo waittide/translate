@@ -1,0 +1,28 @@
+[package]
+name = "web"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+async-stream.workspace = true
+axum.workspace = true
+config = { path = "../config" }
+dirs = "6"
+domain = { path = "../domain" }
+llm = { path = "../llm" }
+parking_lot.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+service = { path = "../service" }
+tokio.workspace = true
+tokio-stream.workspace = true
+tokio-util.workspace = true
+tracing.workspace = true
+
+[lints]
+workspace = true
+
+[dev-dependencies]
+reqwest.workspace = true
+serde_json.workspace = true
+test-support = { path = "../test-support" }

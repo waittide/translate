@@ -1,0 +1,23 @@
+[package]
+name = "service"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+domain = { path = "../domain" }
+config = { path = "../config" }
+llm = { path = "../llm" }
+parking_lot.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+test-support = { path = "../test-support" }
+
+
+[lints]
+workspace = true

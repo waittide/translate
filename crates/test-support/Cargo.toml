@@ -1,0 +1,10 @@
+[package]
+name = "test-support"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+tokio.workspace = true
+
+[lints]
+workspace = true
